@@ -9,4 +9,11 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.selectedIndex = 4
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+    
 }

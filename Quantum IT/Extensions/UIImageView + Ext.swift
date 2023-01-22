@@ -7,6 +7,7 @@
 
 import UIKit
 import Nuke
+import NukeExtensions
 
 extension UIImageView{
     
@@ -18,7 +19,7 @@ extension UIImageView{
         )
         guard let url = URL(string: url) else{ print("Invalid image URL"); return }
         // 2
-        Nuke.loadImage(with: url, options: options, into: self)
+        NukeExtensions.loadImage(with: url, options: options, into: self)
     }
     
 }
